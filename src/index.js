@@ -1,5 +1,3 @@
-// import _ from 'lodash';
-// import './style.css';
 import Task from './components/task.js';
 import './style.css';
 
