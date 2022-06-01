@@ -123,3 +123,10 @@ label {
 .editing {
   background-color: #fffedd;
 }
+
+@media screen and (max-width: 760px) {
+  .root {
+    width: 90%;
+    margin: auto;
+  }
+}
