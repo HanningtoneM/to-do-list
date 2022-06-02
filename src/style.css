@@ -7,16 +7,17 @@ body {
   color: #333;
   height: 100vh;
   font-family: 'Times New Roman', Times, serif;
+  margin: auto;
 }
 
 .container {
   border: 1px solid;
-  width: 50%;
+  width: 40%;
   margin: auto;
   background-color: white;
-  box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.76);
-  -webkit-box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.76);
-  -moz-box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.76);
+  box-shadow: 0 5px 20px -5px rgba(2, 1, 1, 0.76);
+  -webkit-box-shadow: 0 5px 20px -5px rgba(10, 7, 7, 0.76);
+  -moz-box-shadow: 0 5px 20px -5px rgba(5, 3, 3, 0.76);
 }
 
 .header {
@@ -24,10 +25,11 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 1em 1em;
   margin: 0;
   box-sizing: border-box;
   width: 100%;
+  padding-bottom: -10px;
+  padding-left: 10px;
 }
 
 .header button {
@@ -38,7 +40,8 @@ body {
 
 .todo-add {
   display: flex;
-  padding: 10px;
+  padding-top: -10px;
+  padding-left: 10px;
 }
 
 .todo-add button {
@@ -53,11 +56,12 @@ body {
   border: 0;
   border-bottom: 2px solid #9b9b9b;
   outline: 0;
-  font-size: 1.3rem;
+  font-size: 18px;
   color: black;
   padding: 7px 0;
   background: transparent;
   transition: border-color 0.2s;
+  font-style: italic;
 }
 
 ul {
@@ -70,6 +74,9 @@ ul {
   align-items: center;
   justify-content: flex-start;
   gap: 10px;
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
 }
 
 .btns {
@@ -96,6 +103,12 @@ ul {
   font-size: 15px;
 }
 
+.done {
+  text-decoration: line-through;
+  opacity: 0.5;
+  color: blue;
+}
+
 .scroll {
   background-color: transparent;
   border: none;
@@ -116,12 +129,17 @@ ul {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 @media screen and (max-width: 760px) {
   .container {
     width: 90%;
+    margin: auto;
+  }
+
+  body {
+    height: 100vh;
     margin: auto;
   }
 }
