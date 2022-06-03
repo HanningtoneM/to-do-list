@@ -1,4 +1,6 @@
-# to-do-list
+### to-do-list
+
+to do list built with javascript html and css to test my skills in using webpack
 
  To Do list
 
