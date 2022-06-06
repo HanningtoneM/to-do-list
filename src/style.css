@@ -1,104 +1,55 @@
 * {
   margin: 0;
   padding: 0;
-  border: 0;
-  font-size: 100%;
-  vertical-align: baseline;
 }
 
 body {
-  line-height: 1;
-  background-color: #f4f4f4;
+  display: -webkit-box;
   display: flex;
-  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
-  align-items: center;
-  color: #333;
-  height: 100vh;
-  font-family: 'Times New Roman', Times, serif;
-  margin: auto;
+  margin-top: 20px;
 }
 
-ol,
-ul {
-  list-style: none;
+.no-list-style {
+  list-style-type: none;
 }
 
-blockquote,
-q {
-  quotes: none;
+.no-focus:focus {
+  outline: none;
 }
 
-blockquote::before,
-blockquote::after,
-q::before,
-q::after {
-  content: '';
-  content: none;
-}
-
-h1 {
-  font-size: 2em;
-  font-family: Arial, sans-serif;
-}
-
-.todo-list {
-  background-color: white;
-  color: gray;
-  width: 40%;
-  margin: 10em auto;
+.box-shadow {
+  -webkit-box-shadow: 0 0 5px 2px #cecece;
   box-shadow: 0.5em 0.5em 4em 0.5em;
 }
 
-.add {
-  box-sizing: border-box;
-  width: 100%;
+.rotate-90 {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.placeholder-italic::-webkit-input-placeholder {
   font-style: italic;
 }
 
-.delete {
-  padding: 1em;
-  cursor: pointer;
+.placeholder-italic::-ms-input-placeholder {
+  font-style: italic;
 }
 
-i {
-  cursor: pointer;
-  margin-left: auto;
+.placeholder-italic:-ms-input-placeholder {
+  font-style: italic;
 }
 
-.taskText {
-  color: gray;
-  margin: 0 0 0 1em;
-  font-weight: bold;
-  font-family: 'Times New Roman', Times, serif;
+.placeholder-italic::placeholder {
+  font-style: italic;
 }
 
-.delete h3 {
-  text-align: center;
-  font-family: Arial, sans-serif;
+.font-sm {
+  font-size: smaller;
 }
 
-.item {
-  border-bottom: 1px solid lightgray;
-  padding: 1em;
-  display: flex;
-  align-items: center;
-}
-
-.fa-solid {
-  color: red !important;
-  display: block !important;
-  font-size: 20px;
-}
-
-@media screen and (max-width: 760px) {
-  .todo-list {
-    width: 90%;
-    margin: auto;
-  }
-
-  body {
-    height: 100vh;
-    margin: auto;
-  }
+.strike {
+  text-decoration: line-through;
 }
