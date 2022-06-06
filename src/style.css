@@ -53,3 +53,11 @@ body {
 .strike {
   text-decoration: line-through;
 }
+
+@media screen and (max-width: 750px) {
+  body {
+    width: 90%;
+    margin: auto;
+    padding-top: 100px;
+  }
+}
